@@ -1,8 +1,18 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_alnum.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ernstdevan <ernstdevan@student.42.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/13 16:44:23 by ernstdevan        #+#    #+#             */
+/*   Updated: 2024/10/13 17:37:49 by ernstdevan       ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_alnum(int c)
+int	ft_alnum(int c)
 {
-    if(ft_digit(c) == 0 || ft_isalpha(c) == 0)
-        return (0);
-    return (1);
+	if ((ft_digit(c) == 0) || (ft_isalpha(c) == 0))
+		return (0);
+	return (1);
 }
